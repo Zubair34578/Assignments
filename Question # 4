@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multiplication Tables with Numbers 1 to 10</title>
+</head>
+<body>
+<div id="output"></div>
+<script>
+for (let i = 1; i <= 10; i++) {  
+ for (let j = 1; j <= 10; j++) { 
+document.getElementById("output").innerHTML += i + " x " + j + " = " + (i * j) + "<br>"; 
+}
+ document.getElementById("output").innerHTML += "<br>";
+}
+</script>
+
+    </body>
+</html>
