@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Filter Positive Numbers</title>
+</head>
+<body>
+    <div id="output"></div>
+<script>
+function filterPositiveNumbers(numbers) {
+    return numbers.filter(function(number) {
+        return number > 0; }
+    );
+}
+
+let numbersArray = [-19, 3, 7, 6, -2, 7, 2, 1];
+let positiveNumbers = filterPositiveNumbers(numbersArray); 
+
+
+document.getElementById("output").innerHTML = "Positive numbers are: " + positiveNumbers.join(", ");
+</script>
+</body>
+</html>
