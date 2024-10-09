@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculate 10!</title>
+    </head>
+    <body>
+        <div id="output"></div>
+<script>
+let factorial = 1;
+for (let i = 1; i <= 10; i++) 
+factorial *= i;
+document.getElementById("output") .innerHTML = "10! (factorial of 10) is:" + factorial;
+
+</script>
+
+    </body>
+</html>
+
