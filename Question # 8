@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Celsius to Fahrenheit Converter</title>
+    </head>
+    <body>
+        <div id="output"></div>
+<script>
+function convertCelsiusToFahrenheit(celsius){
+    let fahrenheit = (celsius * 9/5) + 32;
+    return fahrenheit;
+}
+let celsiusvalue= 30;
+let fahrenheitvalue= convertCelsiusToFahrenheit(celsiusvalue);
+
+document.getElementById("output") .innerHTML = celsiusvalue +"̊ C is equal to " + fahrenheitvalue + "̊ F";
+</script>
+
+    </body>
+</html> 
+
