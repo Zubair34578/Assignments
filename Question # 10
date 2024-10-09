@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sum Of Array Numbers</title>
+    </head>
+    <body>
+        <div id="output"></div>
+<script>
+let numbers = [1,2,3,4,5,6];
+let sum=0
+for (let i=0; i < numbers.length; i++) {
+    sum += numbers [i];
+}
+document.getElementById("output") .innerHTML = "Sum of numbers is:" + sum;
+
+</script>
+    </body>
+</html>
