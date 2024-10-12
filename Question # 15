@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Find Nth Fibonacci</title>
+</head>
+<body>
+    <div id="output"></div>
+<script>
+function findFibonacci(n) {
+    if (n === 0) {
+        return 0;
+    } else if (n === 1) {
+        return 1;
+    } else {
+        return findFibonacci(n - 1) + findFibonacci(n - 2);
+    }
+}
+
+let nthFibonacci = 11;
+let fibonacciNumber = findFibonacci(nthFibonacci);
+
+document.getElementById("output").innerHTML = "The " + nthFibonacci + "th Fibonacci number is " + fibonacciNumber;
+
+</script>
+</body>
+</html>
