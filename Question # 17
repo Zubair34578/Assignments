@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sum of Digits </title>
+</head>
+<body>
+    <h2>Calculate Sum of Digits (For Loop)</h2>
+    <input type="number" id="numberInput" placeholder="Enter a positive number">
+    <button onclick="calculateSum()">Calculate Sum</button>
+    <p id="result"></p>
+
+    <script>
+      function sumOfDigits(num) {
+            let sum = 0; 
+
+     for (; num > 0; num = Math.floor(num / 10)) {
+     sum += num % 10; 
+    }
+ return sum;
+        }
+
+        function calculateSum() {
+            let number = parseInt(document.getElementById("numberInput").value); 
+            let sum = sumOfDigits(number); 
+
+            document.getElementById("result").innerHTML = "Sum of digits is: " + sum;
+        }
+    </script>
+</body>
+</html>
