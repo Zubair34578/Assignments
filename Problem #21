@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rotate Array Right</title>
+</head>
+<body>
+    <h2>Rotate an Array to the Right</h2>
+    <div id="output"></div>
+    <script>
+        let array = [1, 2, 3, 4, 5];
+
+        if (array.length === 0) {
+            document.getElementById("output").innerHTML = "Array is empty!";
+        } else {
+           
+            let lastElement = array.pop();
+            array.unshift(lastElement);
+       document.getElementById("output").innerHTML = "Rotated Array: " + array.join(", ");
+        }
+    </script>
+</body>
+</html>
