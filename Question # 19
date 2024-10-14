@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prime Numbers After a Start Point</title>
+</head>
+<body>
+    <div id="output"></div>
+<script>
+  function isPrime(number) {
+  if (number <= 1) return false;
+  for (let i = 2; i <= Math.sqrt(number); i++) {
+  if (number % i === 0) {
+  return false;
+    }
+    }
+    return true; 
+    }
+   function findPrimes(nPrimes, startAt) {
+    let primes = [];
+    let number = startAt + 1; 
+    for (let count = 0; count < nPrimes; number++) { 
+    if (isPrime(number)) {
+    primes.push(number); 
+    count++; 
+        }
+    }
+    return primes; 
+    }
+        let nPrimes = 7; 
+        let startAt = 10; 
+        let result = findPrimes(nPrimes, startAt);
+        document.getElementById("output").innerHTML = "Prime numbers: " + result.join(", "); 
+    </script>
+</body>
+</html>
