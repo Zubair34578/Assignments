@@ -4,7 +4,7 @@
     <title>Rotate Array to the Left</title>
 </head>
 <body>
-    <h2>Rotate Array to the Left by 1 Position</h2>
+    <h2>Rotate Array to the Left</h2>
     <div id="output"></div>
 
     <script>
