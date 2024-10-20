@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title>Array Difference</title>
+</head>
+<body>
+
+ <h1>Array Difference </h1>
+  <p id="result"></p> 
+  
+  <script>
+      function arrayDifference(arr1, arr2) {
+      let difference = [];
+
+      for (let i = 0; i < arr1.length; i++) {
+      let found = false;
+
+      for (let j = 0; j < arr2.length; j++) {
+      if (arr1[i] === arr2[j]) {
+      found = true;
+      break;
+      }
+       }
+      if (!found) {
+      difference.push(arr1[i]);
+        }
+       }
+      return difference;
+        }
+
+      const array1 = [1, 2, 3, 4, 5];
+      const array2 = [3, 4, 6];
+
+      const result = arrayDifference(array1, array2);
+
+      document.getElementById("result").innerText = "Difference: " + result;
+    </script>
+</body>
+</html>
