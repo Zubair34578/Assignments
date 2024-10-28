@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Print Numbers 1 to 10</title>
+    </head>
+    <div id="output"></div>
+    <body>
+        
+<script>
+    //Step#1: Hum ne aik div element dena hay jo k wepage pe hamara output display karay.
+    //Step#2: kisi bhi loop ka use karna hay
+    //Step#3: Aik variable inintialize karna hay jo start hoga 1 se.
+    //step#4: Hum ne condition set karni hay k loop kab tak chalay ga.
+    //step#5: Increment/ Decrement karni hay, ye is liye k agar loop 0 se start hoga to phir move karay ga 1 ki taraf.
+  for(i = 1; i <= 10; i++) {
+
+    //Step#6: Hum document.getElementById ka use kar k apna result display karvayn gay aur .innerHTML hamain madad karay ga Elements ko dhondnay mein.
+    document.getElementById("output").innerHTML += "Number: " + i + "<br>";
+  }  
+</script>
+    </body>
+</html>
