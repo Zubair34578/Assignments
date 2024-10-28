@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Print Odd Numbers less than 100</title>
+    </head>
+    <div id="output"></div>
+    <body>
+        <script>
+            //Odd numbers vo hotay hain jo 2 se divide nahi hotay.
+            //step#1: pehlay div element se result display karvanay k liye id "output den ge"
+            //step#2: aik variable declare karen gay phir uski value likhain gay. Condition lagayn gay k loop kab tak chalay ga, phir Increment/ Decrement karain gay.
+            // iss mein hun ne 100 tak k Odd No. Print karnay hain to hum i +=2 ka use karain gay jo k har element main 2 numbers add karay ga.
+            //step#3: document.getElement by Id ka use kar k result webpage pe display hoga
+            for(i = 1; i <= 100; i+=2){
+                document.getElementById("output").innerHTML += i + "<br>"; // += operator ka use iss liye keya hay kyu k ye Us element ko bhi sath joray  ga jo k loop main pehlay se mojud hay.
+            }
+                </script>
+    </body>
+</html>
