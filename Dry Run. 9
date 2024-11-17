@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Sum Calculation Without +=</title>
+</head>
+<body>
+    <h1>Calculate Sum</h1>
+    
+ <p>Enter your First Num. :<input type="number" id="numInput"></p>
+    
+ <p>Here your Second Num. :<input type="number" id="number"></p>
+    
+   
+    <button onclick="calculateSum()">Calculate Sum</button>
+
+    <p id="result">Result: </p>
+
+    <script>
+       
+        function calculateSum() {
+            //  Get the input values for sum and i
+            let sum = parseInt(document.getElementById("numInput").value);
+            let i = parseInt(document.getElementById("number").value);
+
+            //  Update sum 
+            sum = sum + i;
+
+            // Display the result
+            document.getElementById("result").textContent = "Result: " + sum;
+        }
+    </script>
+</body>
+</html>
