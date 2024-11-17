@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html >
+<head>
+    
+    <title>Replace Multiplication with Addition</title>
+</head>
+<body>
+   
+    <p>Result: <div id = "output"></div></p>
+
+    <script>
+        let result = 5;   // Initial value of result
+        let x = 3;       
+
+        // Using addition to multiply result by x
+        let additionResult = 0;  
+
+       
+        for (let i = 0; i < x; i++) {
+            additionResult += result;  
+            // i = 0, True, additionResult = 5
+            // i = 1, True , additionResult = 10
+            // i =2 , True , additionResult = 15
+            // i = 3, False, Break
+        }
+
+        document.getElementById("output").innerText = "The result is: " + additionResult;
+    </script>
+
+</body>
+</html>
