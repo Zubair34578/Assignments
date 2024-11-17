@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Sum of Numbers</title>
+</head>
+<body>
+  
+    
+   <p>Your Number :<input type="number" id="number" placeholder="Enter a number"></p>
+   
+    <button onclick="calculateSum()">Calculate Sum</button>
+
+    <p id="result">Result: </p>
+
+    <script>
+       
+        function calculateSum() {
+          
+            let n = parseInt(document.getElementById("number").value);
+            let result = 0;  
+            let i = 0;  
+
+            
+            while (i < n) {
+                result += i;  
+                i++;  
+            }
+            // n= 5
+            // i = 0, True, result = 0
+            // i = 1, True, result = 1
+            // i = 2, True, result = 3
+            // i = 3, True, result = 6
+            // i = 4, true, result = 10
+            // i = 5, False , Break
+
+     
+            document.getElementById("result").textContent = "Result: " + result;
+        }
+    </script>
+</body>
+</html>
