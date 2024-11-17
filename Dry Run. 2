@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html >
+<head>
+    
+    <title>Expand Single Line Code</title>
+</head>
+<body>
+    
+    <p>Result: <div id="output"></div></p>
+
+    <script>
+        let result = 5;  
+        let i = 3;       
+
+        
+        let secondResult;  // Declaring variable to store result
+        secondResult = result * i;  // 5*3 = 15, 
+        result = secondResult;  // result = 15
+
+        
+        document.getElementById("output").innerText = "The result is: " + result;
+    </script>
+</body>
+</html>
