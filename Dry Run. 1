@@ -26,7 +26,7 @@
             /// i = 3, true, result = 6
             /// i = 4, true, result = 24
             /// i = 5, true, result = 120
-
+            /// i = 6, False, Break
          
             document.getElementById("output").innerText = result;
         }
