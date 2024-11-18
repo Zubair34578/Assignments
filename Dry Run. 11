@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculate Factorial</title>
+</head>
+<body>
+    <h1>Factorial Calculator</h1>
+    <p>Enter a Number: <input type="number" id="numInput"></p>
+    <button onclick="calculateFactorial()">Calculate Factorial</button>
+
+    <div id="output"></div>
+
+    <script>
+        function calculateFactorial() {
+            let num = parseInt(document.getElementById("numInput").value); 
+            let result = 1; 
+            let i = num; 
+
+            while (i > 0) { 
+                result *= i;
+                i--;           
+                // num = 5:
+                // i = 5, True, result = 5
+                // i = 4, True, result = 20
+                // i = 3, True, result = 60
+                // i = 2, True, result = 120
+                // i = 1, True, result = 120
+                // i = 0, False, loop break
+            }
+
+       
+            document.getElementById("output").textContent = "Factorial of " + num + " is: " + result;
+        }
+    </script>
+</body>
+</html>
