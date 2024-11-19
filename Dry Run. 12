@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Factorial Dry Run</title>
+</head>
+<body>
+
+    <div id="output"></div>
+
+    <script>
+      function calculateFactorial(num) {
+        
+        if (num === 1 || num === 0) {  
+          return 1; 
+        }
+        // num = 4:
+        // calculateFactorial(4) = 4 * calculateFactorial(3)  is not a base case
+        // calculateFactorial(3) = 3 * calculateFactorial(2)  is not a base case
+        // calculateFactorial(2) = 2 * calculateFactorial(1)  is not a base case
+        // calculateFactorial(1) = 1 is a base case
+        return num * calculateFactorial(num - 1); 
+      }   
+        // calculateFactorial(2) = 2 * 1 = 2
+        // calculateFactorial(3) = 3 * 2 = 6
+        // calculateFactorial(4) = 4 * 6 = 24
+        
+
+      let num = 4; 
+      let result = calculateFactorial(num); 
+      
+      document.getElementById("output").innerHTML = "Factorial of  " + num + " is : " + result;
+          
+    </script>
+
+</body>
+</html>
+
