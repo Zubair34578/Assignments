@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cumulative Product with Helper Function</title>
+</head>
+<body>
+
+    <div id="output"></div>
+
+    <script>
+         function multiply(a, b) {
+            return a * b; 
+        }
+
+        function cumulativeProduct(n) {
+            let result = 1; 
+
+            for (let i = 1; i <= n; i++) {
+               
+                // i = 1, True, result = 1 * 1 = 1
+                // i = 2, True, result = 1 * 2 = 2
+                // i = 3, True,result = 2 * 3 = 6
+                // i = 4, True, result = 6 * 4 = 24
+                //i = 5, False, Break
+                result = multiply(result, i); 
+            }
+            return result; 
+        }
+        let n = 4; 
+        let result = cumulativeProduct(n);
+
+        document.getElementById("output").innerHTML = "Cumulative product (factorial) of " + n + " is: " + result;
+
+    </script>
+
+</body>
+</html>
